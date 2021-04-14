@@ -92,6 +92,8 @@ main {
 .media-icon img {
     width: 60px;
     height: 60px;
+    border: 2px solid black;
+    text-align: center;
 }
 
 .button {
@@ -205,4 +207,5 @@ select {
 
 .copyright {
     border: 2px solid black;
+    font-size: 16px;
 }
