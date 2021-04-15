@@ -1,211 +1,235 @@
-/*@media screen and (max-width: 1000px) {
-    .wide {
-        display: none;
-    }
-    .dropdown {
-        display: inline-flex !important;
-    }
-}*/
-
-body {
-    background-color: #f8f8da;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 1px solid black;
-    box-shadow: 5px 5px 3px rgb(68, 59, 59);
-}
-
-h1 {
-    font: 4em;
-    text-align: center;
-    color: #010B5B;
-}
-
-logo {
-    padding: 20px;
-}
-
-.topnav {
-    font: message-box;
-    background-color: black;
-    text-align: center;
-    height: 65px;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.nav-link {
-    text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    text-decoration: none;
-    color: rgb(197, 129, 39);
-}
-
-.nav-link:hover {
-    color: white;
-    background-color: rgb(197, 129, 39);
-}
-
-main {
-    padding: 30px;
-}
-
-#biker-img {
-    margin: 10px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-#website-button {
-    position: relative;
-    text-align: center;
-    width: 90%;
-    height: 50px;
-    margin-left: 30px;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 20px;
-    background-color: black;
-}
-
-#website-button a {
-    color: rgb(197, 129, 39);
-    text-decoration: none;
-}
-
-#biker-container {
-    width: 75%;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.media-icon img {
-    width: 60px;
-    height: 60px;
-    border: 2px solid black;
-    text-align: center;
-}
-
-.button {
-    background-color: black;
-    color: rgb(197, 129, 39);
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 5px;
-}
-
-.button:hover {
-    cursor: pointer;
-}
-
-.form-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-label {
-    font-weight: bold;
-}
-
-#gender {
-    border: 1px solid black;
-    flex-direction: column;
-}
-
-.form-container label {
-    padding: 5px;
-}
-
-#footer {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#homeheader {
-    margin-top: 0;
-}
-
-h1 {
-    text-align: center;
-    color: black;
-    font-size: 2em;
-    margin: 0;
-    padding: 10px;
-}
-
-.image-container {
-    width: 25%;
-}
-
-.dropdown-button {
-    background-color: rgb(197, 129, 39);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    display: none !important;
-    justify-self: flex-end;
-}
-
-.dropdown-container {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-container a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-container {
-    display: block;
-}
-
-.dropdown:hover .dropdown-button {
-    background-color: #3e8e41;
-}
-
-.submit {
-    float: right;
-}
-
-input[type=text],
-select {
-    height: 30px;
-}
-
-.copyright {
-    border: 2px solid black;
-    font-size: 16px;
-}
+                      @media screen and (max-width: 1200px) {
+                          .wide {
+                              display: none;
+                          }
+                          .dropdown {
+                              display: inline-block !important;
+                          }
+                      }
+                      
+                      @media screen and (max-width: 890px) {
+                          #image-container {
+                              display: none;
+                          }
+                          #biker-container {
+                              width: 100% !important;
+                          }
+                      }
+                      
+                      body {
+                          background-color: #f8f8da;
+                          margin-left: 150px;
+                          margin-right: 150px;
+                          margin-top: 50px;
+                          margin-bottom: 50px;
+                          border: 1px solid black;
+                          box-shadow: 5px 5px 3px rgb(68, 59, 59);
+                      }
+                      
+                      h1 {
+                          font: 4em;
+                          text-align: center;
+                          color: #010B5B;
+                      }
+                      
+                      #logo {
+                          padding: 20px;
+                      }
+                      
+                      .topnav {
+                          font: message-box;
+                          background-color: black;
+                          text-align: center;
+                          height: 65px;
+                          display: flex;
+                          flex-direction: row;
+                          overflow: hidden;
+                          width: 100%;
+                          justify-content: space-between;
+                      }
+                      
+                      .nav-link {
+                          text-align: center;
+                          font-size: 20px;
+                          padding: 20px;
+                          text-decoration: none;
+                          color: rgb(197, 129, 39);
+                      }
+                      
+                      .nav-link:hover {
+                          color: white;
+                          background-color: rgb(197, 129, 39);
+                      }
+                      
+                      main {
+                          padding: 30px;
+                      }
+                      
+                      #website-button {
+                          position: relative;
+                          text-align: center;
+                          width: 90%;
+                          height: 50px;
+                          margin-left: 30px;
+                          border-radius: 8px;
+                          padding: 10px;
+                          font-size: 20px;
+                          background-color: black;
+                      }
+                      
+                      #website-button a {
+                          color: rgb(197, 129, 39);
+                          text-decoration: none;
+                      }
+                      
+                      #biker-container {
+                          width: 75%;
+                      }
+                      
+                      #biker-img {
+                          margin: 10px;
+                          margin-bottom: 20px;
+                          padding-left: 20px;
+                      }
+                      
+                      .flex-container {
+                          display: flex;
+                          flex-direction: row;
+                          width: 100%;
+                      }
+                      
+                      .media-icon img {
+                          width: 60px;
+                          height: 60px;
+                          display: flex;
+                          flex-direction: row;
+                      }
+                      
+                      .button {
+                          background-color: black;
+                          color: rgb(197, 129, 39);
+                          text-decoration: none;
+                          border: 2px solid black;
+                          padding: 10px;
+                          padding-right: 30px;
+                          padding-left: 30px;
+                          border-radius: 5px;
+                      }
+                      
+                      .button:hover {
+                          cursor: pointer;
+                      }
+                      
+                      .form-container {
+                          width: 100%;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-around;
+                          margin-top: 30px;
+                          margin-bottom: 30px;
+                          margin-left: auto;
+                          margin-right: auto;
+                      }
+                      
+                      label {
+                          font-weight: bold;
+                      }
+                      
+                      #gender {
+                          border: 1px solid black;
+                          flex-direction: column;
+                      }
+                      
+                      .form-container label {
+                          padding: 5px;
+                      }
+                      
+                      #footer {
+                          width: auto;
+                          margin-left: auto;
+                          margin-right: auto;
+                          height: 100px;
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: center;
+                      }
+                      
+                      #homeheader {
+                          margin-top: 0;
+                      }
+                      
+                      h1 {
+                          text-align: center;
+                          color: black;
+                          font-size: 2em;
+                          margin: 0;
+                          padding: 10px;
+                      }
+                      
+                      .dropdown-button {
+                          background-color: rgb(197, 129, 39);
+                          padding: 16px;
+                          font-size: 16px;
+                          border: none;
+                          height: 100%;
+                      }
+                      
+                      .dropdown {
+                          display: none;
+                          justify-self: flex-end;
+                      }
+                      
+                      .dropdown-container {
+                          display: none;
+                          position: absolute;
+                          background-color: black;
+                          min-width: 160px;
+                          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                          z-index: 1;
+                      }
+                      
+                      .dropdown-container a {
+                          padding: 12px 16px;
+                          text-decoration: none;
+                          display: block;
+                      }
+                      
+                      .dropdown:hover .dropdown-container {
+                          display: block;
+                      }
+                      
+                      .dropdown:hover .dropdown-button {
+                          background-color: black;
+                          color: rgb(197, 129, 39);
+                          border-bottom: 4px solid rgb(197, 129, 39);
+                          cursor: pointer;
+                      }
+                      
+                      .submit {
+                          float: right;
+                      }
+                      
+                      input[type=text],
+                      select {
+                          height: 30px;
+                      }
+                      
+                      .copyright {
+                          font-size: 16px;
+                      }
+                      
+                      #product-design {
+                          width: 100%;
+                      }
+                      
+                      .gallery-img {
+                          width: 30%;
+                      }
+                      
+                      .flex-space {
+                          justify-content: space-between;
+                      }
+                      
+                      #ul {
+                          justify-content: space-between;
+                      }
